@@ -1,0 +1,22 @@
+﻿<Window x:Class="Day002_ContadorDeCliques.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day002_ContadorDeCliques"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btn_clique" Content="Clique" HorizontalAlignment="Center" Margin="0,185,0,0" VerticalAlignment="Top" Height="55" Width="156" Grid.RowSpan="2" Click="btn_clique_Click"/>
+        <Label x:Name="lbl_mostradorCliques" Grid.Column="1" Content="0" HorizontalAlignment="Center" Margin="0,169,0,0" VerticalAlignment="Top" Height="71" Width="72" Grid.RowSpan="2" FontSize="48" FontWeight="Bold"/>
+        <Label Content="Clique no botão para acrescentar +1 ao contador." HorizontalAlignment="Left" Margin="186,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="18"/>
+    </Grid>
+</Window>
